@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"happy_academy/controller"
+)
 
 func main() {
-	fmt.Println("Hello")
+	controller.StartServer()
 }
