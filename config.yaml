@@ -1,2 +1,2 @@
 mysql:
-  dsn: "ibeacon:1234456@tcp(202.28.34.197:3306)/proj63_ibeacon?collation=utf8mb4_unicode_ci&parseTime=true"
+  dsn: "root:1234456@tcp(localhost:3306)/tsm?collation=utf8mb4_unicode_ci&parseTime=true"

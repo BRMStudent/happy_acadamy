@@ -11,5 +11,9 @@ func StartServer() {
 	router.GET("/", func(c *gin.Context) {
 		c.String(http.StatusOK, "Api is running...")
 	})
+
+	NewTestController(router)
+	NewCarController(router)
+	NewPurchaseController(router)
 	router.Run()
 }
