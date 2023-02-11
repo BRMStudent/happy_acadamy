@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import "happy_academy/controller"
 
 func main() {
-	fmt.Println("Hello")
+	controller.StartServer()
+
+	// db, err := repository.NewDatabaseConnection()
+	// if err != nil {
+	// 	panic(err)
+	// } else {
+	// 	println("Good")
+	// }
+	// _ = db
+
 }

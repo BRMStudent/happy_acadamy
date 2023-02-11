@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "8b3a5f35-1ac8-45f7-b8e3-476f9637ed9b",
+		"name": "TSM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24997869"
+	},
+	"item": [
+		{
+			"name": "Car",
+			"item": [
+				{
+					"name": "FilterCar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/car/filter?style=color&size=S&index=2&brand=ISU&limit=5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"car",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "style",
+									"value": "color"
+								},
+								{
+									"key": "size",
+									"value": "S"
+								},
+								{
+									"key": "index",
+									"value": "2"
+								},
+								{
+									"key": "brand",
+									"value": "ISU"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/car",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"car"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Purchases",
+			"item": [
+				{
+					"name": "SavePurchase",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"TransID\":\"SS-20230211-1200-010\",\r\n    \"Status\":\"arriving\",\r\n    \"AddressId\":1,\r\n    \"Cars\" :14,\r\n    \"TotalPrice\":590000,\r\n    \"CustomerId\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/purchase",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FilterPurchase",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "StartServer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
